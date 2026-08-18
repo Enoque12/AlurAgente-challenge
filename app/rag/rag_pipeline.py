@@ -43,9 +43,13 @@ def ask_question(
         context,
     )
 
-    sources = [
-        document.metadata.get("source")
-        for document in results
-    ]
+    sources: list[str] = []
+
+    for document in results:
+        source = document.metadata.get("source")
+
+        if isinstance(source, str) and source:
+            if source not in sources:
+                sources.append(source)
 
     return answer, sources

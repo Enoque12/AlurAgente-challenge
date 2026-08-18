@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain_community.embeddings import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
@@ -9,7 +9,7 @@ def create_embeddings():
     textos em vetores numericos.
     """
     
-    embeddings = HuggingFaceBgeEmbeddings(
+    embeddings = HuggingFaceEmbeddings(
         model_name=MODEL_NAME,
     )
     
