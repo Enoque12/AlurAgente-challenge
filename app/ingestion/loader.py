@@ -1,27 +1,34 @@
 from pathlib import Path
 
-from langchain_community.document_loaders import (
-    DirectoryLoader,
-    TextLoader,
-)
+from langchain_core.documents import Document
 
-DOCUMENTS_PATH = Path("documents/sample")
+from app.ingestion.loaders.multi_loader import load_file
 
-def load_documents():
+
+DOCUMENTS_DIR = Path("documents")
+
+
+def load_documents() -> list[Document]:
     """
-    Carrega os documentos Markdown disponiveis na pasta de documentos.
+    Carrega todos os documentos suportados
+    encontrados no diretório documents/.
     """
-    
-    loader = DirectoryLoader(
-        str(DOCUMENTS_PATH),
-        glob="**/*.md",
-        loader_cls=TextLoader,
-        loader_kwargs={
-            "encoding": "utf-8",
-        },
-        show_progress=True,
-    )
-    
-    documents = loader.load()
-    
+
+    documents: list[Document] = []
+
+    for file_path in DOCUMENTS_DIR.rglob("*"):
+
+        if not file_path.is_file():
+            continue
+
+        try:
+
+            loaded = load_file(file_path)
+
+            documents.extend(loaded)
+
+        except ValueError:
+            # Ignora formatos não suportados.
+            continue
+
     return documents
