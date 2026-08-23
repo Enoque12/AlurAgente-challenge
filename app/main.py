@@ -239,6 +239,7 @@ def render_question_form() -> None:
             answer, sources = ask_question(
                 st.session_state.vector_store,
                 question,
+                st.session_state.messages,
             )
 
         st.markdown(answer)

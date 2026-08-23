@@ -1,6 +1,3 @@
-from pathlib import Path
-from tempfile import TemporaryDirectory
-
 import streamlit as st
 
 
