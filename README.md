@@ -456,7 +456,7 @@ A arquitectura pode ser representada da seguinte forma:
 │                                                               │
 │  Resposta do agente + documentos utilizados como fontes      │
 └───────────────────────────────────────────────────────────────┘
-
+```
 # 🛠️ Tecnologias utilizadas
 
 O **NexusTech AI Agent** foi desenvolvido utilizando tecnologias e bibliotecas orientadas para a construção de aplicações de Inteligência Artificial, processamento de documentos e implementação de sistemas **Retrieval-Augmented Generation (RAG)**.
@@ -484,7 +484,7 @@ O projecto utiliza uma arquitectura baseada em **Retrieval-Augmented Generation 
 
 O fluxo principal é composto pelas seguintes etapas:
 
-```text
+```
 Documentos
     │
     ▼
@@ -730,13 +730,11 @@ Para parar o servidor, pressione:
 ```
 Ctrl + C
 ```
-```
 
 # 📸 Evidências e Screenshots
 
 Esta secção apresenta evidências visuais do funcionamento do **NexusTech AI Agent**, demonstrando as principais funcionalidades implementadas no projecto.
 
-> **Nota:** As imagens abaixo devem ser substituídas pelos screenshots reais da aplicação e dos testes realizados.
 
 ---
 
@@ -748,14 +746,7 @@ Screenshot da interface principal do NexusTech AI Agent, apresentando a área de
 
 > **[INSERIR IMAGEM AQUI]**
 
-<!--
-Sugestão de localização:
-docs/images/interface-principal.png
--->
-
----
-
-## 9.2 📚 Upload de documentos
+## 📚 Upload de documentos
 
 Evidência do carregamento de documentos de conhecimento através da interface da aplicação.
 
@@ -765,14 +756,7 @@ A aplicação permite seleccionar múltiplos ficheiros nos formatos suportados, 
 
 > **[INSERIR IMAGEM AQUI]**
 
-<!--
-Sugestão de localização:
-docs/images/upload-documentos.png
--->
-
----
-
-## 9.3 ⚙️ Processamento e criação da base de conhecimento
+## ⚙️ Processamento e criação da base de conhecimento
 
 Evidência do processamento dos documentos carregados e da criação da base de conhecimento vectorial utilizando **FAISS**.
 
@@ -780,14 +764,8 @@ Evidência do processamento dos documentos carregados e da criação da base de 
 
 > **[INSERIR IMAGEM AQUI]**
 
-<!--
-Sugestão de localização:
-docs/images/base-conhecimento.png
--->
 
----
-
-## 9.4 💬 Conversação com o agente
+## 💬 Conversação com o agente
 
 Evidência da realização de uma pergunta em linguagem natural e da resposta gerada pelo agente com base nos documentos recuperados.
 
@@ -799,14 +777,8 @@ Evidência da realização de uma pergunta em linguagem natural e da resposta ge
 
 > **[INSERIR IMAGEM AQUI]**
 
-<!--
-Sugestão de localização:
-docs/images/chat-pergunta-resposta.png
--->
 
----
-
-## 9.5 📖 Fontes consultadas
+## 📖 Fontes consultadas
 
 Evidência da apresentação das fontes utilizadas para gerar uma determinada resposta.
 
@@ -823,7 +795,7 @@ docs/images/fontes-consultadas.png
 
 ---
 
-## 9.6 📄 Teste de ingestão multi-formato
+## 📄 Teste de ingestão multi-formato
 
 Evidência do teste realizado para validar o suporte aos diferentes formatos de documentos.
 
@@ -850,11 +822,11 @@ docs/images/teste-multiformato.png
 
 ---
 
-## 9.7 🔎 Diagnóstico da recuperação semântica
+## 🔎 Diagnóstico da recuperação semântica
 
 Evidência dos testes realizados para verificar os resultados retornados pela busca semântica, incluindo os documentos recuperados e respectivos *scores* de distância.
 
-Exemplo:
+**Exemplo de saída do diagnóstico:**
 
 ```text
 ======================================================================
