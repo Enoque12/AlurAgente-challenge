@@ -1,4 +1,4 @@
-# 🤖 NexusTech AI Agent
+# 🤖 NexusTech AI Agent 
 
 > Assistente corporativo inteligente baseado em **Retrieval-Augmented Generation (RAG)**, desenvolvido para responder a perguntas utilizando informações presentes nos documentos de conhecimento de uma organização.
 
@@ -15,6 +15,13 @@ Quando uma pergunta é submetida, o sistema realiza uma **busca semântica**, id
 O projecto implementa, portanto, uma arquitectura baseada em **Retrieval-Augmented Generation (RAG)**, permitindo separar a recuperação de conhecimento da geração da resposta.
 
 O principal objectivo é demonstrar a implementação de um **assistente corporativo baseado em RAG**, capaz de responder a perguntas utilizando como fonte de conhecimento documentos fornecidos pela organização.
+
+
+## 🌐 Acesso à aplicação
+
+A aplicação **NexusTech AI Agent** está disponível online para demonstração e testes.
+
+👉 **Acesse agora:** [NexusTech AI Agent](https://aluragente-challenge.streamlit.app/)
 
 ---
 
@@ -744,7 +751,9 @@ Screenshot da interface principal do NexusTech AI Agent, apresentando a área de
 
 **📷 Screenshot — Interface principal**
 
-> **[INSERIR IMAGEM AQUI]**
+![Interface principal](assets/visaogeral.png)
+
+---
 
 ## 📚 Upload de documentos
 
@@ -754,7 +763,9 @@ A aplicação permite seleccionar múltiplos ficheiros nos formatos suportados, 
 
 **📷 Screenshot — Upload de documentos**
 
-> **[INSERIR IMAGEM AQUI]**
+![Upload de documentos](assets/conversacao_com_bot.png)
+
+---
 
 ## ⚙️ Processamento e criação da base de conhecimento
 
@@ -762,8 +773,9 @@ Evidência do processamento dos documentos carregados e da criação da base de 
 
 **📷 Screenshot — Base de conhecimento criada**
 
-> **[INSERIR IMAGEM AQUI]**
+![Base de conhecimento criada](assets/criando_base_de_conhecimento.png)
 
+---
 
 ## 💬 Conversação com o agente
 
@@ -775,8 +787,9 @@ Evidência da realização de uma pergunta em linguagem natural e da resposta ge
 
 **📷 Screenshot — Pergunta e resposta**
 
-> **[INSERIR IMAGEM AQUI]**
+![Pergunta e resposta](assets/conversacao_com_bot.png)
 
+---
 
 ## 📖 Fontes consultadas
 
@@ -786,14 +799,8 @@ Esta funcionalidade permite ao utilizador identificar os documentos recuperados 
 
 **📷 Screenshot — Fontes consultadas**
 
-> **[INSERIR IMAGEM AQUI]**
+![Fontes consultadas](assets/citacao_de_fontes.png)
 
-<!--
-Sugestão de localização:
-docs/images/fontes-consultadas.png
--->
-
----
 
 ## 📄 Teste de ingestão multi-formato
 
@@ -811,16 +818,6 @@ O teste confirmou a ingestão dos seguintes formatos:
 - TXT
 - XLSX
 
-**📷 Screenshot — Resultado do teste multi-formato**
-
-> **[INSERIR IMAGEM AQUI]**
-
-<!--
-Sugestão de localização:
-docs/images/teste-multiformato.png
--->
-
----
 
 ## 🔎 Diagnóstico da recuperação semântica
 
